@@ -5,7 +5,6 @@ import { useTheme } from 'next-themes';
 import { RiMoonFill, RiSunLine } from 'react-icons/ri';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useBreakpoint } from 'use-breakpoint';
 
 interface NavItem {
   label: string;
@@ -18,11 +17,11 @@ const NAV_ITEMS: Array<NavItem> = [
     page: 'home',
   },
   {
-    label: 'About',
-    page: 'about',
+    label: 'Projects',
+    page: 'projects',
   },
   {
-    label: 'Projects',
+    label: 'Portfolio',
     page: 'projects',
   },
 ];
@@ -80,7 +79,7 @@ const Navbar = () => {
                     <Link
                       key={idx}
                       to={item.page}
-                      className="lg:inLine-block block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
+                      className="lg:inLine-block block text-neutral-900 hover:text-blue-400 dark:text-neutral-100"
                       activeClass="active"
                       spy={true}
                       smooth={true}
@@ -116,13 +115,7 @@ const Navbar = () => {
                 <Link
                   key={idx}
                   to={item.page}
-                  className="lg:inLine-block block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
-                  onClick={() => setOpen(!isOpen)}
+                  className="lg:inLine-block block text-neutral-900 hover:text-blue-400 dark:text-neutral-100"
                 >
                   {item.label}
                 </Link>,

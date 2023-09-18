@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import '../styles/globals.css';
 import Navbar from '@/components/Navbar';
-import MenuOverlay from '@/components/MenuOverlay';
 import { ThemeProvider } from 'next-themes';
 
 export default function RootLayout({
