@@ -1,14 +1,14 @@
-"use client"
-import React, { useState } from "react";
-import '../styles/globals.css'
-import Navbar from '@/components/Navbar'
-import MenuOverlay from '@/components/MenuOverlay'
-import { ThemeProvider } from 'next-themes'
+'use client';
+import React, { useState } from 'react';
+import '../styles/globals.css';
+import Navbar from '@/components/Navbar';
+import MenuOverlay from '@/components/MenuOverlay';
+import { ThemeProvider } from 'next-themes';
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
@@ -21,5 +21,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

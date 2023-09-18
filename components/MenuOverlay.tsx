@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
 
-const MenuOverlay = ({ navbarOpen, setNavbarOpen } : {navbarOpen:any, setNavbarOpen:any}) => {
+const MenuOverlay = ({
+  navbarOpen,
+  setNavbarOpen,
+}: {
+  navbarOpen: any;
+  setNavbarOpen: any;
+}) => {
   return (
     <nav
-      className={`fixed flex top-0 left-0 w-full p-10 z-10 h-screen pt-24 bg-gray-900 text-white bg-opacity-100 transform delay-100 transition-all duration-300 ${
-        navbarOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
+      className={`fixed left-0 top-0 z-10 flex h-screen w-full transform bg-gray-900 bg-opacity-100 p-10 pt-24 text-white transition-all delay-100 duration-300 ${
+        navbarOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
       }`}
     >
-      <ul className="w-full flex flex-col items-start">
+      <ul className="flex w-full flex-col items-start">
         <li className="nav-li">
           <a
             href="/"
