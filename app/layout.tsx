@@ -1,6 +1,8 @@
 "use client"
+import React, { useState } from "react";
 import '../styles/globals.css'
 import Navbar from '@/components/Navbar'
+import MenuOverlay from '@/components/MenuOverlay'
 import { ThemeProvider } from 'next-themes'
 
 export default function RootLayout({
@@ -8,12 +10,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
       <body>
         <ThemeProvider enableSystem={true} attribute="class">
