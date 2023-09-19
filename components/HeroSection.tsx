@@ -7,7 +7,9 @@ import { HiArrowDown, HiArrowRight } from 'react-icons/hi';
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="my-10 flex flex-col items-center justify-center py-16 text-center sm:py-20 md:flex-row-reverse md:space-x-4 md:py-40 md:text-left">
+      {/*Div that contains picture and text*/}
+      <div className="my-10 flex flex-col items-center justify-center text-center sm:mt-20 md:mt-40 md:flex-row-reverse md:space-x-4">
+        {/*Picture*/}
         <div className="md:mt-2 md:w-1/2">
           <Image
             className="rounded-full shadow-2xl"
@@ -17,12 +19,13 @@ const HeroSection = () => {
             height={500}
           />
         </div>
-        <div className="px-20 md:mt-2 md:w-3/5">
-          <h1 className="mt-6 text-4xl font-semibold md:mt-0 md:text-5xl">
+        {/*Name Title Text*/}
+        <div className="px-5 md:mt-2 md:w-3/5">
+          <h1 className="mt-6 text-4xl font-semibold md:mt-0 md:text-left md:text-5xl">
             {' '}
             Hey, I'm Dineth!
           </h1>
-          <p className="mb-10 mt-4 text-2xl md:text-2xl">
+          <p className="mb-10 mt-4 text-2xl md:text-left">
             I&#39;m a junior at the
             <span className="font-bold text-blue-500">
               {' '}
@@ -42,15 +45,26 @@ const HeroSection = () => {
             </a>{' '}
             chapter.
           </p>
-          <Link
-            href="/projects"
-            className="inline-flex flex-row items-center gap-4 rounded bg-gradient-to-r from-blue-600 to-fuchsia-700 px-8 py-3 font-semibold text-neutral-100 shadow hover:bg-blue-800"
-          >
-            Projects
-            <HiArrowRight />
-          </Link>
+          {/*Div that contains buttons*/}
+          <div className="items-left flex flex-row space-x-4">
+            <Link
+              href="/resume.pdf"
+              className="inline-flex w-2/5 flex-row items-center justify-between gap-4 rounded bg-gray-500 px-6 py-3 font-semibold text-neutral-100 shadow transition-[padding] duration-300 ease-in-out hover:bg-gray-700 hover:pl-8"
+            >
+              Resume
+              <HiArrowRight />
+            </Link>
+            <Link
+              href="/projects"
+              className="inline-flex w-2/5 flex-row items-center justify-between gap-4 rounded bg-gradient-to-r from-blue-600 to-fuchsia-700 px-6 py-3 font-semibold text-neutral-100 shadow transition-[padding] duration-300 ease-in-out hover:bg-blue-800 hover:pl-8"
+            >
+              Projects
+              <HiArrowRight />
+            </Link>
+          </div>
         </div>
       </div>
+      {/* Div that has arrow*/}
       <div className="flex flex-row justify-center">
         <button
           onClick={(evt) => {
