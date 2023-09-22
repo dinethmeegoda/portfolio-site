@@ -1,9 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import { Link } from 'react-scroll/modules';
+import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { RiMoonFill, RiSunLine } from 'react-icons/ri';
-import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import { AnimatePresence, motion } from 'framer-motion';
 
 interface NavItem {
@@ -66,17 +65,24 @@ const Navbar = () => {
           {/* Desktop Bar*/}
           <div className={`mt-0 hidden pb-0 text-2xl md:block`}>
             <div className="flex items-center space-x-6 space-y-0">
-              {NAV_ITEMS.map((item, idx) => {
-                return [
-                  <Link
-                    key={idx}
-                    to={item.page}
-                    className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
-                  >
-                    {item.label}
-                  </Link>,
-                ];
-              })}
+              <Link
+                href="/"
+                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
+              >
+                About
+              </Link>
+              <Link
+                href="/projects"
+                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
+              >
+                Projects
+              </Link>
+              <Link
+                href="/portfolio"
+                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
+              >
+                Portfolio
+              </Link>
               <button
                 onClick={() => setTheme('light')}
                 className="hidden rounded-xl bg-slate-100 p-2 dark:block"
@@ -103,23 +109,27 @@ const Navbar = () => {
             className={`fixed inset-0 z-0 mt-8 flex min-h-screen flex-col items-center justify-center bg-white p-12 text-2xl dark:bg-black max-md:font-bold md:relative md:mt-0 md:hidden md:min-h-max md:pb-0`}
           >
             <div className="space-y-8 text-center">
-              {NAV_ITEMS.map((item, idx) => {
-                return [
-                  <Link
-                    key={idx}
-                    to={item.page}
-                    className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
-                    onClick={() => setOpen(!isOpen)}
-                  >
-                    {item.label}
-                  </Link>,
-                ];
-              })}
+              <Link
+                href="/"
+                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
+                onClick={() => setOpen(!isOpen)}
+              >
+                About
+              </Link>
+              <Link
+                href="/projects"
+                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
+                onClick={() => setOpen(!isOpen)}
+              >
+                Projects
+              </Link>
+              <Link
+                href="/portfolio"
+                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
+                onClick={() => setOpen(!isOpen)}
+              >
+                Portfolio
+              </Link>
               <button
                 onClick={() => setTheme('light')}
                 className="hidden rounded-xl bg-slate-100 p-2 dark:inline-block"
