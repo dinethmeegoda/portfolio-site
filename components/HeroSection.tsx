@@ -65,7 +65,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Div that has arrow*/}
-      <div className="flex flex-row justify-center">
+      <div className="mt-32 flex flex-row justify-center">
         <button
           onClick={(evt) => {
             evt.preventDefault();
