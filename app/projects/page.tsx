@@ -1,9 +1,9 @@
-import Demo from '@/components/Demo';
+import ProjectsSection from '@/components/ProjectsSection';
 
 export default function Projects() {
   return (
     <main className="">
-      <Demo />
+      <ProjectsSection />
     </main>
   );
 }
