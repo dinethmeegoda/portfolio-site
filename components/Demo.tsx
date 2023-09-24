@@ -35,7 +35,7 @@ const Demo = () => {
         </h1>
         <div className="flex flex-col items-stretch justify-center space-y-10 align-top md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">
           <div className="md:w-2/3">
-            <h1 className="mb-6 text-center text-2xl font-bold sm:my-8 md:text-left">
+            <h1 className="mb-6 text-center text-2xl font-bold md:text-left">
               {' '}
               Demo Reel
             </h1>
