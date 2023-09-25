@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-7xl">
+    <main className="xs:px-6 mx-auto max-w-3xl px-4 md:max-w-7xl">
       <HeroSection />
       <Demo />
     </main>

@@ -58,7 +58,7 @@ const Demo = () => {
               {skills.map((item, idx) => {
                 return (
                   <p
-                    key={idx}
+                    key={item.skill}
                     /* animation doesnt work rn*/
                     className={`mr-2 mt-2 rounded px-4 py-2 font-semibold text-white [animation:appear_.4s_ease-out_var(--appear-delay)_1_normal_backwards] ${
                       idx % 2 === 0

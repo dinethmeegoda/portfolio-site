@@ -91,7 +91,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: '40px' }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: '40px', transition: { ease: 'easeIn' } }}
-            className={`fixed inset-0 z-0 mt-8 flex min-h-screen flex-col items-center justify-center bg-white p-12 text-2xl dark:bg-black max-md:font-bold md:relative md:mt-0 md:hidden md:min-h-max md:pb-0`}
+            className={`fixed inset-0 z-10 mt-8 flex min-h-screen flex-col items-center justify-center bg-white p-12 text-2xl dark:bg-black max-md:font-bold md:relative md:mt-0 md:hidden md:min-h-max md:pb-0`}
           >
             <div className="space-y-8 text-center">
               <Link

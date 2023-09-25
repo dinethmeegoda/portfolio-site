@@ -8,9 +8,9 @@ const HeroSection = () => {
   return (
     <section id="home">
       {/*Div that contains picture and text*/}
-      <div className="my-10 flex flex-col items-center justify-center text-center sm:mt-20 md:mt-40 md:flex-row-reverse md:space-x-4">
+      <div className="xs:mt-20 my-10 flex flex-col items-center justify-center text-center md:mt-40 md:flex-row-reverse md:space-x-4">
         {/*Picture*/}
-        <div className="sm:pt-12 md:mt-2 md:w-1/2">
+        <div className="xs:pt-12 md:mt-2 md:w-1/2">
           <Image
             className="rounded-full shadow-2xl"
             src="/headshot.jpg"
