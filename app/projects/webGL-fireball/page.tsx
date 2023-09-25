@@ -1,9 +1,9 @@
-import Demo from '@/components/Demo';
+import Construction from '@/components/Construction';
 
 export default function Projects() {
   return (
     <main className="">
-      <Demo />
+      <Construction />
     </main>
   );
 }

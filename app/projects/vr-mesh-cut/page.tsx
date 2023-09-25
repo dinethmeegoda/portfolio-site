@@ -1,9 +1,9 @@
-import Demo from '@/components/Demo';
+import VRMesh from '@/components/project-components/VRMesh';
 
 export default function Projects() {
   return (
-    <main className="">
-      <Demo />
+    <main className="my-28 md:my-48">
+      <VRMesh />
     </main>
   );
 }

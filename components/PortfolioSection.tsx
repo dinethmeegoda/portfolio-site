@@ -17,6 +17,12 @@ const projects = [
     tags: ['Unreal ', 'Substance ', 'Maya'],
   },
   {
+    name: 'Procedural Wall Material',
+    link: '/portfolio/brick-wall-material',
+    image: '/portfolio-images/brick-wall-material/title.PNG',
+    tags: ['Substance Designer'],
+  },
+  {
     name: 'League Of Legends: Urgot',
     link: '/portfolio/urgot',
     image: '/portfolio-images/urgot/title.PNG',
@@ -29,16 +35,10 @@ const projects = [
     tags: ['Maya', 'Blender'],
   },
   {
-    name: 'Procedural Wall Material',
-    link: '/portfolio/brick-wall-material',
-    image: '/portfolio-images/brick-wall-material/title.PNG',
-    tags: ['Substance Designer'],
-  },
-  {
     name: 'Trippin on Shaders',
     link: '/portfolio/shadertoy-trippin',
     image: '/portfolio-images/shadertoy-trippin/title.PNG',
-    tags: ['GLSL', 'Shadertoy'],
+    tags: ['GLSL', 'Shadertoy', 'Premiere'],
   },
   {
     name: 'Low Poly Room',
@@ -81,7 +81,7 @@ const PortfolioSection = () => {
               // eslint-disable-next-line react/jsx-key
               <Link href={project.link}>
                 <div key={idx} className={`relative rounded-xl`}>
-                  <SlideUp offset="-300px 0px -300px 0px">
+                  <SlideUp offset="-150px 0px -150px 0px">
                     <div className="animate-slideUpCubiBezier animation-delay-2">
                       <Image
                         className="rounded-xl opacity-100 transition-[opacity] duration-300 ease-in-out hover:opacity-50 md:opacity-100"

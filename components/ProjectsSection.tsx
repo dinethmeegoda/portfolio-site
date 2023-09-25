@@ -74,6 +74,34 @@ const projects = [
     description: 'Personal Portfolio Site (So Meta).',
     tags: ['React', 'Tailwind', 'Next.js'],
   },
+  {
+    name: 'SDF Engine',
+    link: '/projects/sdf-mogus',
+    image: '/projects-images/sdf-mogus/title.png',
+    description: 'Ray Marching SDF Creation Engine with GLSL.',
+    tags: ['OpenGL', 'GLSL', 'C++'],
+  },
+  {
+    name: 'Surface and Postprocessing Shaders',
+    link: '/projects/shader-fun',
+    image: '/projects-images/shader-fun/title.png',
+    description: 'Collection of shaders implemented with GLSL.',
+    tags: ['OpenGL', 'GLSL', 'C++'],
+  },
+  {
+    name: '3D Rasterizer',
+    link: '/projects/rasterizer',
+    image: '/projects-images/rasterizer/title.png',
+    description: '3D CPU Based Rasterizer with interactive camera controls.',
+    tags: ['C++'],
+  },
+  {
+    name: 'Bionic Traveler',
+    link: '/projects/bionic-traveler',
+    image: '/projects-images/bionic-traveler/title.png',
+    description: '2D RPG published on Steam made with UPGRADE@Penn.',
+    tags: ['Unity', 'Photoshop'],
+  },
 ];
 
 const ProjectsSection = () => {
@@ -91,7 +119,7 @@ const ProjectsSection = () => {
               // eslint-disable-next-line react/jsx-key
               <Link href={project.link}>
                 <div key={idx} className={`relative rounded-xl`}>
-                  <SlideUp offset="-300px 0px -300px 0px">
+                  <SlideUp offset="-150px 0px -150px 0px">
                     <div className="animate-slideUpCubiBezier animation-delay-2">
                       <Image
                         className="rounded-xl opacity-30 shadow-lg transition-[opacity] duration-300 ease-in-out hover:opacity-75 md:opacity-25"

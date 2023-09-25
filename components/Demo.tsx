@@ -33,8 +33,8 @@ const Demo = () => {
           What Do I Do?
           <hr className="mx-auto my-4 h-2 w-12 rounded border-0 bg-gradient-to-r from-blue-600 to-fuchsia-700"></hr>
         </h1>
-        <div className="flex flex-col items-stretch justify-center space-y-10 align-top md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">
-          <div className="md:w-2/3">
+        <div className="flex flex-col items-stretch justify-center space-y-10 align-top lg:flex-row lg:space-x-10 lg:space-y-0 lg:p-4 lg:text-left">
+          <div className="lg:w-2/3">
             <h1 className="mb-6 text-center text-2xl font-bold md:text-left">
               {' '}
               Demo Reel
@@ -50,11 +50,11 @@ const Demo = () => {
               ></iframe>
             </div>
           </div>
-          <div className="md:w-1/3">
-            <h1 className="mb-6 text-center text-2xl font-bold md:text-left">
+          <div className="lg:w-1/3">
+            <h1 className="mb-6 text-center text-2xl font-bold lg:text-left">
               My Skills
             </h1>
-            <div className="flex flex-row flex-wrap justify-center md:justify-start">
+            <div className="flex flex-row flex-wrap justify-center lg:justify-start">
               {skills.map((item, idx) => {
                 return (
                   <p
