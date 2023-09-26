@@ -8,31 +8,31 @@ const VRMesh = () => {
   return (
     <section id="home">
       {/*Div that contains picture and text*/}
-      <div className="flex flex-col items-center justify-center text-center lg:space-x-4">
+      <div className="container mx-auto flex flex-col items-center justify-center text-left lg:space-x-4">
         {/*Name Title Text*/}
-        <div className="mx-5 px-10 xl:mt-2">
-          <h1 className="mb-10 text-4xl font-semibold xl:text-6xl">
+        <div className="mx-5 flex flex-col px-10 xl:mt-2">
+          <h1 className="text-4xl font-semibold xl:mb-10 xl:text-6xl">
             {' '}
             VR Mesh Cutting Tool
           </h1>
           {/*Picture*/}
-          <div className="my-16 xl:flex xl:flex-row xl:space-x-12">
-            <div className="xl:w-3/5">
+          <div className="my-16 xl:space-x-12">
+            <div className="mr-6 xl:float-left xl:w-3/5">
               <div className="flex aspect-video flex-col">
                 <iframe
-                  className=" h-full w-full rounded-lg"
+                  className="h-full w-full rounded-lg"
                   src="https://www.youtube.com/embed/7zhOj0iSXVE?si=kTtDrxwUWDojmWNQ"
                   width="100%"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
-                <p className="font-style: my-4 text-xl italic">
+                <p className="font-style: my-4 text-center text-xl italic">
                   Brief Video Overview of the project
                 </p>
               </div>
             </div>
-            <div className="xl:w-2/5">
+            <div className="">
               <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:mt-0 xl:text-left">
                 The Problem
               </h1>
@@ -52,16 +52,16 @@ const VRMesh = () => {
                 real-time mesh cutting feature that would run at least 75 FPS on
                 the Quest to deter motion sickness.
               </p>
-              <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              <p className="text-2xl leading-relaxed xl:mb-10 xl:pr-12 xl:text-left">
                 However, there was no accessible algorithm that would be able to
                 modify and cut complex meshes in realtime while maintaining the
                 high framerate needed for VR.
               </p>
             </div>
           </div>
-          <div className="mitems-center flex flex-col xl:flex-row">
-            <div className="xl:w-3/5">
-              <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:mt-0 xl:text-left">
+          <div className="flex flex-col items-center xl:flex-row">
+            <div className="xl:w-3/4">
+              <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
                 Breakthrough Ideas
               </h1>
               <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
@@ -93,7 +93,7 @@ const VRMesh = () => {
                 tracking.
               </p>
             </div>
-            <div className="mx-auto xl:w-2/5">
+            <div className="mx-auto xl:w-1/4">
               <Image
                 className=""
                 src="/projects-images/vr-mesh/MeshCutDemo.gif"
@@ -136,8 +136,30 @@ const VRMesh = () => {
               width={1560}
               height={758}
             />
-            <p className="mx-auto my-4 text-left text-xl italic ">
+            <p className="mx-auto my-4 text-center text-xl italic ">
               Whiteboard prototype of the 3D Hashing Algorithm
+            </p>
+          </div>
+          <div>
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              Since I needed the cut to be continous as the user intersected the
+              scalpel with the mesh, I decided to use a spline structure in
+              order to have points of a bezier curve be placed in each hashed
+              section of space as the user intersects the scalpel with the mesh.
+              I used{' '}
+              <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+                <a href="https://github.com/SebLague/Path-Creator">
+                  this library
+                </a>
+              </span>{' '}
+              from Sebastian Lague to implement the splines into the project.
+            </p>
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              Now that we have a spline in 3D space which represents the cut we
+              want to create, we need to actually generate the mesh along the
+              spline. Luckily, the library comes with powerful tools to achieve
+              this, which I used to procedurally generate a mesh along the
+              curve. However, in order to get a convincing look, I had to
             </p>
           </div>
         </div>

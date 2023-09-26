@@ -9,7 +9,7 @@ const projects = [
     link: '/projects/vr-mesh-cut',
     image: '/projects-images/vr-mesh/title.PNG',
     description:
-      'A tool built for the Unity Engine with C# that procedurally creates real-time mesh cuts on models.',
+      'A tool built for Unity that procedurally creates real-time mesh cuts on models.',
     tags: ['C# ', 'Unity ', 'Blender'],
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     link: '/projects/mini-minecraft',
     image: '/projects-images/mini-minecraft/title.PNG',
     description:
-      'Version of Minecraft made with OpenGL and C++ implemented with a custom game engine.',
+      'Version of Minecraft with multithreading implemented with a custom game engine.',
     tags: ['C++', 'OpenGL', 'GLSL'],
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     link: '/projects/pathtracer',
     image: '/projects-images/path-tracer/title.PNG',
     description:
-      'Pathtracer built with C++ and GLSL with custom scene creation and variety of materials.',
+      'Monte-Carlo Pathtracer with scene creation, multisampling, and materials.',
     tags: ['GLSL', 'OpenGL', 'C++'],
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     link: '/projects/procedural-city',
     image: '/projects-images/procedural-city/title.PNG',
     description:
-      'Procedurally Built Medieval City made in Houdini and Unreal Engine using Wave Function Collapse.',
+      'Procedurally Built Medieval City using Wave Function Collapse.',
     tags: ['Unreal', 'Houdini', 'Python'],
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     link: '/projects/realtime-renderer',
     image: '/projects-images/realtime-renderer/title.PNG',
     description:
-      'Real-time Rendering Engine written with GLSL and OpenGL implementing PBR materials, textures, and HDRI mapping.',
+      'Real-time Rendering Engine implementing PBR materials, textures, and HDRIs.',
     tags: ['GLSL', 'OpenGL'],
   },
   {
@@ -49,22 +49,21 @@ const projects = [
     link: '/projects/mini-maya',
     image: '/projects-images/mini-maya/title.PNG',
     description:
-      '3D Modelling Program made with C++ and OpenGL that implements Catmull-Clark subdivision and mesh skinning with basic skeletons',
+      '3D Modelling Program that implements subdivision and mesh skinning with basic skeletons.',
     tags: ['C++', 'OpenGL', 'Qt'],
   },
   {
     name: 'WebGL Procedural Fireball',
     link: '/projects/webGL-fireball',
     image: '/projects-images/webgl-fireball/title.PNG',
-    description: 'Procedurally generated fireball made with WebGL and GLSL.',
+    description: 'Procedurally generated fireball character.',
     tags: ['WebGL', 'GLSL'],
   },
   {
     name: 'WebGL Procedural Technoblob',
     link: '/projects/webGL-procedural-blob',
     image: '/projects-images/webgl-blob/title.PNG',
-    description:
-      'Procedurally generated noise-function dense blob made with WebGL and GLSL.',
+    description: 'Procedurally generated noise-function dense blob.',
     tags: ['WebGL', 'GLSL'],
   },
   {
@@ -78,14 +77,14 @@ const projects = [
     name: 'SDF Engine',
     link: '/projects/sdf-mogus',
     image: '/projects-images/sdf-mogus/title.png',
-    description: 'Ray Marching SDF Creation Engine with GLSL.',
+    description: 'Ray Marching SDF Creation Engine.',
     tags: ['OpenGL', 'GLSL', 'C++'],
   },
   {
-    name: 'Surface and Postprocessing Shaders',
+    name: 'Surface & Post Shaders',
     link: '/projects/shader-fun',
     image: '/projects-images/shader-fun/title.png',
-    description: 'Collection of shaders implemented with GLSL.',
+    description: 'Collection of GLSL surface & post shaders.',
     tags: ['OpenGL', 'GLSL', 'C++'],
   },
   {
@@ -93,7 +92,7 @@ const projects = [
     link: '/projects/rasterizer',
     image: '/projects-images/rasterizer/title.png',
     description: '3D CPU Based Rasterizer with interactive camera controls.',
-    tags: ['C++'],
+    tags: ['C++', 'Qt'],
   },
   {
     name: 'Bionic Traveler',
@@ -120,7 +119,7 @@ const ProjectsSection = () => {
               <Link href={project.link}>
                 <div key={idx} className={`relative rounded-xl`}>
                   <SlideUp offset="-150px 0px -150px 0px">
-                    <div className="animate-slideUpCubiBezier animation-delay-2">
+                    <div className="animation-delay-2 animate-slideUpCubiBezier">
                       <Image
                         className="rounded-xl opacity-30 shadow-lg transition-[opacity] duration-300 ease-in-out hover:opacity-75 md:opacity-25"
                         src={project.image}
