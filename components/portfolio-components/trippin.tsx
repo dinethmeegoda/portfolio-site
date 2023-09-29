@@ -21,7 +21,7 @@ const Trippin = () => {
         </div>
         <Image
           className="mx-auto mt-10 rounded-xl shadow-2xl"
-          src="/construction.png"
+          src="/constructionMonkey.png"
           alt=""
           width={1472}
           height={490}

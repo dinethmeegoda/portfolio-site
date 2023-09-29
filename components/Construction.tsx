@@ -17,7 +17,7 @@ const Construction = () => {
         <div className="mt-12">
           <Image
             className="mx-auto rounded-xl shadow-2xl"
-            src="/construction.png"
+            src="/constructionMonkey.png"
             alt=""
             width={1472}
             height={490}

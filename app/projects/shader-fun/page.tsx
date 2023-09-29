@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <main className="">
+    <main className="my-28 md:my-48">
       <Construction />
     </main>
   );
