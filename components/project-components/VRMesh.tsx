@@ -11,7 +11,7 @@ const VRMesh = () => {
       <div className="container mx-auto flex flex-col items-center justify-center text-left lg:space-x-4">
         {/*Name Title Text*/}
         <div className="mx-5 flex flex-col px-10 xl:mt-2">
-          <h1 className="text-4xl font-semibold xl:mb-10 xl:text-6xl">
+          <h1 className="text-center text-4xl font-semibold xl:text-6xl">
             {' '}
             VR Mesh Cutting Tool
           </h1>
@@ -136,7 +136,7 @@ const VRMesh = () => {
               width={1560}
               height={758}
             />
-            <p className="mx-auto my-4 text-center text-xl italic ">
+            <p className="mx-auto my-10 text-center text-xl italic ">
               Whiteboard prototype of the 3D Hashing Algorithm
             </p>
           </div>
@@ -160,6 +160,103 @@ const VRMesh = () => {
               spline. Luckily, the library comes with powerful tools to achieve
               this, which I used to procedurally generate a mesh along the
               curve. However, in order to get a convincing look, I had to
+              generate the mesh right on the surface of the model while using
+              the surface normal to align the mesh generation right under the
+              surface of the cuttable mesh in the correct orientation. Using a
+              Ray Caster from the scalpel, I found the surface normal of the
+              cuttable surface and used that orientation as the local up vector
+              to generate the cut mesh right along the surface of the mesh that
+              is being cut. With some more simple calculations, such as finding
+              the local right direction by crossing the up vector and direction
+              of the spline (the forward vector since Unity is left-handed), the
+              mesh was able to be generated convincingly along the spline.
+            </p>
+
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              Finally, to make this mesh actually look like a cut, I allowed
+              material parameters into the mesh creation script so that the user
+              would be able to apply custom materials to the top layer of the
+              cut, sides, and bottom. By applying the passthrough material from
+              earlier, since the mesh was generated with the normals of the top
+              layer pointing up, the top layer is not visible and it creates the
+              illusion that the object is being cut into.
+            </p>
+
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              Combining the passthrough material, section hashing, splines, and
+              mesh generation, I was able to create the intended effect. Under
+              the hood, as the user intersects the scalpel (or whatever is set
+              as the cutter object) with a cuttable object, a point on a spline
+              is generated (or a new spline is created if it is part of a new
+              cut) as long as the user is cutting within a new section of space
+              determined by the hashing algorithm. Then as new points are being
+              placed on the spline, the mesh is generated taking in the
+              scalpel's distance from the surface, also simulating cut depth.
+              And best of all, this whole system is incredibly performant in
+              realtime VR. Nice!
+            </p>
+          </div>
+          <div className="xl:w-3/4">
+            <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
+              Usage
+            </h1>
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              This tool can be used by both users of the program as well as
+              developers. The mesh generation script can be run before runtime
+              along a spline, which is also easily editable within the editor
+              due to Sebastian Lague's fantastic spline library. The developer
+              also has access to several parameters within the script, allowing
+              them to change cut width, the materials on the sides and bottom of
+              cut, and how accurate the cut can be by customizing the section
+              block size of the hashing algorithm in any of the x,y,z axes. All
+              in all, this tool is intuitive to use for the developer and has a
+              seamless experience for the user if they want to cut up an object,
+              particularly in a surgical simulation.
+            </p>
+          </div>
+          <div className="">
+            <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
+              Future Work and What I've Learned
+            </h1>
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              This project was an incredible learning experience for me and I
+              fully appreicate the oppoturnity to work on an exciting project
+              like this where there wasn't a clear cut solution and a new system
+              had to be figured out. Although I no longer work on this project,
+              and I'm sure it has been continued to be developed, some new
+              features that could be added are looping cuts, dynamic cut width
+              based on scalpel orientation, and specifically for a surgical use
+              case, blood effects when a mesh is cut.
+            </p>
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              Through this project, I learned how to leverage my resources to
+              compile different ideas and solutions to figure out ideas that
+              would work for my specific problem. Having that &apos;aha&apos;
+              moment when watching the ground crack VFX tutorial and realizing I
+              could exrapolate a similar process for creating an efficient
+              cutting system was amazing and I hope to have similar moments when
+              figuring out a graphics problem for future technical art projects.
+              This was also my first experience working through these projects
+              in a group setting and talking through problems as a team.
+              Although this project's implementation was mostly designed and
+              programmed by me, having teammates to bounce ideas off of was an
+              invaluable resource and something I hope to have more in the
+              future.
+            </p>
+            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+              Special thanks to my entire team at Penn Medicine for being there
+              for me and my ideas, especially by mentor{' '}
+              <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+                <a href="https://github.com/dwebpenn">Dan Weber</a>
+              </span>
+              {', '}
+              and my fellow PURM DMD'er,{' '}
+              <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+                <a href="https://presentations.curf.upenn.edu/person/li-jacqueline-0">
+                  Jacqueline Li
+                </a>
+              </span>
+              {'.'}
             </p>
           </div>
         </div>
