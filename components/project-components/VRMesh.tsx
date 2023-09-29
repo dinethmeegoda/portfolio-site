@@ -1,8 +1,5 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { HiArrowDown, HiArrowRight } from 'react-icons/hi';
 
 const VRMesh = () => {
   return (
@@ -16,8 +13,8 @@ const VRMesh = () => {
             VR Mesh Cutting Tool
           </h1>
           {/*Picture*/}
-          <div className="my-16 xl:space-x-12">
-            <div className="mr-6 xl:float-left xl:w-3/5">
+          <div className="my-16">
+            <div className="mr-20 xl:float-left xl:w-3/5">
               <div className="flex aspect-video flex-col">
                 <iframe
                   className="h-full w-full rounded-lg"
@@ -45,20 +42,20 @@ const VRMesh = () => {
                 procedure, in which surgeons would make a small incision into
                 the patient&apos;s neck.
               </p>
-              <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
-                This would use the Quest&apos;s hand tracking feature to
-                increase the immersion and practice value of the simulation.
-                However, to make this simulation accurate, we needed to use a
-                real-time mesh cutting feature that would run at least 75 FPS on
-                the Quest to deter motion sickness.
-              </p>
-              <p className="text-2xl leading-relaxed xl:mb-10 xl:pr-12 xl:text-left">
-                However, there was no accessible algorithm that would be able to
-                modify and cut complex meshes in realtime while maintaining the
-                high framerate needed for VR.
-              </p>
             </div>
           </div>
+          <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+            This would use the Quest&apos;s hand tracking feature to increase
+            the immersion and practice value of the simulation. However, to make
+            this simulation accurate, we needed to use a real-time mesh cutting
+            feature that would run at least 75 FPS on the Quest to deter motion
+            sickness.
+          </p>
+          <p className="text-2xl leading-relaxed xl:mb-10 xl:pr-12 xl:text-left">
+            However, there was no accessible algorithm that would be able to
+            modify and cut complex meshes in realtime while maintaining the high
+            framerate needed for VR.
+          </p>
           <div className="flex flex-col items-center xl:flex-row">
             <div className="xl:w-3/4">
               <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
@@ -130,7 +127,7 @@ const VRMesh = () => {
               intersection point.
             </p>
             <Image
-              className="mx-auto w-2/3"
+              className="mx-auto w-4/5"
               src="/projects-images/vr-mesh/hashSketch.jpg"
               alt=""
               width={1560}
@@ -154,24 +151,41 @@ const VRMesh = () => {
               </span>{' '}
               from Sebastian Lague to implement the splines into the project.
             </p>
-            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
-              Now that we have a spline in 3D space which represents the cut we
-              want to create, we need to actually generate the mesh along the
-              spline. Luckily, the library comes with powerful tools to achieve
-              this, which I used to procedurally generate a mesh along the
-              curve. However, in order to get a convincing look, I had to
-              generate the mesh right on the surface of the model while using
-              the surface normal to align the mesh generation right under the
-              surface of the cuttable mesh in the correct orientation. Using a
-              Ray Caster from the scalpel, I found the surface normal of the
-              cuttable surface and used that orientation as the local up vector
-              to generate the cut mesh right along the surface of the mesh that
-              is being cut. With some more simple calculations, such as finding
-              the local right direction by crossing the up vector and direction
-              of the spline (the forward vector since Unity is left-handed), the
-              mesh was able to be generated convincingly along the spline.
-            </p>
-
+            <div className="xl:flex xl:flex-row">
+              <div className="mx-auto my-auto xl:mr-10 xl:w-1/4">
+                <Image
+                  className=""
+                  src="/projects-images/vr-mesh/SeeThroughCut.gif"
+                  alt=""
+                  width={500}
+                  height={500}
+                />
+                <p className="font-style: my-4 text-left text-xl italic">
+                  View of the spline and underlying procedural geometry of the
+                  cut.
+                </p>
+              </div>
+              <div className="xl:w-3/4">
+                <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
+                  Now that we have a spline in 3D space which represents the cut
+                  we want to create, we need to actually generate the mesh along
+                  the spline. Luckily, the library comes with powerful tools to
+                  achieve this, which I used to procedurally generate a mesh
+                  along the curve. However, in order to get a convincing look, I
+                  had to generate the mesh right on the surface of the model
+                  while using the surface normal to align the mesh generation
+                  right under the surface of the cuttable mesh in the correct
+                  orientation. Using a Ray Caster from the scalpel, I found the
+                  surface normal of the cuttable surface and used that
+                  orientation as the local up vector to generate the cut mesh
+                  right along the surface of the mesh that is being cut. With
+                  some more simple calculations, such as finding the local right
+                  direction by crossing the up vector and direction of the
+                  spline (the forward vector since Unity is left-handed), the
+                  mesh was able to be generated convincingly along the spline.
+                </p>
+              </div>
+            </div>
             <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
               Finally, to make this mesh actually look like a cut, I allowed
               material parameters into the mesh creation script so that the user
@@ -181,7 +195,6 @@ const VRMesh = () => {
               layer pointing up, the top layer is not visible and it creates the
               illusion that the object is being cut into.
             </p>
-
             <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
               Combining the passthrough material, section hashing, splines, and
               mesh generation, I was able to create the intended effect. Under
@@ -191,42 +204,58 @@ const VRMesh = () => {
               cut) as long as the user is cutting within a new section of space
               determined by the hashing algorithm. Then as new points are being
               placed on the spline, the mesh is generated taking in the
-              scalpel's distance from the surface, also simulating cut depth.
-              And best of all, this whole system is incredibly performant in
-              realtime VR. Nice!
-            </p>
-          </div>
-          <div className="xl:w-3/4">
-            <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
-              Usage
-            </h1>
-            <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
-              This tool can be used by both users of the program as well as
-              developers. The mesh generation script can be run before runtime
-              along a spline, which is also easily editable within the editor
-              due to Sebastian Lague's fantastic spline library. The developer
-              also has access to several parameters within the script, allowing
-              them to change cut width, the materials on the sides and bottom of
-              cut, and how accurate the cut can be by customizing the section
-              block size of the hashing algorithm in any of the x,y,z axes. All
-              in all, this tool is intuitive to use for the developer and has a
-              seamless experience for the user if they want to cut up an object,
-              particularly in a surgical simulation.
+              scalpel&apos;s distance from the surface, also simulating cut
+              depth. And best of all, this whole system is incredibly performant
+              in realtime VR. Nice!
             </p>
           </div>
           <div className="">
             <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
-              Future Work and What I've Learned
+              Usage
+            </h1>
+            <div className="xl:flex xl:flex-row">
+              <p className="mb-10 text-2xl leading-relaxed xl:w-3/4 xl:pr-12 xl:text-left">
+                This tool can be used by both users of the program as well as
+                developers. The mesh generation script can be run before runtime
+                along a spline, which is also easily editable within the editor
+                due to Sebastian Lague&apos;s fantastic spline library. The
+                developer also has access to several parameters within the
+                script, allowing them to change cut width, the materials on the
+                sides and bottom of cut, and how accurate the cut can be by
+                customizing the section block size of the hashing algorithm in
+                any of the x,y,z axes. All in all, this tool is intuitive to use
+                for the developer and has a seamless experience for the user if
+                they want to cut up an object, particularly in a surgical
+                simulation.
+              </p>
+              <div className="mx-auto xl:w-1/4">
+                <Image
+                  className=""
+                  src="/projects-images/vr-mesh/MaterialCut.gif"
+                  alt=""
+                  width={500}
+                  height={500}
+                />
+                <p className="font-style: my-4 text-left text-xl italic">
+                  Material Customization for the cut
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 xl:text-left">
+              Future Work and What I&apos;ve Learned
             </h1>
             <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
               This project was an incredible learning experience for me and I
               fully appreicate the oppoturnity to work on an exciting project
-              like this where there wasn't a clear cut solution and a new system
-              had to be figured out. Although I no longer work on this project,
-              and I'm sure it has been continued to be developed, some new
-              features that could be added are looping cuts, dynamic cut width
-              based on scalpel orientation, and specifically for a surgical use
-              case, blood effects when a mesh is cut.
+              like this where there wasn&apos;t a clear cut solution and a new
+              system had to be figured out. Although I no longer work on this
+              project, and I&apos;m sure it has been continued to be developed,
+              some new features that could be added are looping cuts, dynamic
+              cut width based on scalpel orientation, general bug-fixes and
+              specifically for a surgical use case, blood effects when a mesh is
+              cut.
             </p>
             <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
               Through this project, I learned how to leverage my resources to
@@ -238,9 +267,9 @@ const VRMesh = () => {
               figuring out a graphics problem for future technical art projects.
               This was also my first experience working through these projects
               in a group setting and talking through problems as a team.
-              Although this project's implementation was mostly designed and
-              programmed by me, having teammates to bounce ideas off of was an
-              invaluable resource and something I hope to have more in the
+              Although this project&apos;s implementation was mostly designed
+              and programmed by me, having teammates to bounce ideas off of was
+              an invaluable resource and something I hope to have more in the
               future.
             </p>
             <p className="mb-10 text-2xl leading-relaxed xl:pr-12 xl:text-left">
@@ -250,7 +279,7 @@ const VRMesh = () => {
                 <a href="https://github.com/dwebpenn">Dan Weber</a>
               </span>
               {', '}
-              and my fellow PURM DMD'er,{' '}
+              and my fellow PURM DMD&apos;er,{' '}
               <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
                 <a href="https://presentations.curf.upenn.edu/person/li-jacqueline-0">
                   Jacqueline Li
@@ -258,6 +287,18 @@ const VRMesh = () => {
               </span>
               {'.'}
             </p>
+            <div className="flex w-full flex-col items-center justify-center">
+              <Image
+                className="rounded-xl"
+                src="/projects-images/vr-mesh/FinalMeshCut.gif"
+                alt=""
+                width={4000}
+                height={4000}
+              />
+              <p className="font-style: my-4 text-left text-xl italic">
+                Final Demo of the Cut.
+              </p>
+            </div>
           </div>
         </div>
       </div>
