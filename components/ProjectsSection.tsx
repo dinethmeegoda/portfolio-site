@@ -7,7 +7,7 @@ const projects = [
   {
     name: 'VR Mesh Tool',
     link: '/projects/vr-mesh-cut',
-    image: '/projects-images/vr-mesh/title.PNG',
+    image: '/projects-images/vr-mesh/title.png',
     description:
       'A tool built for Unity that procedurally creates real-time mesh cuts on models.',
     tags: ['C# ', 'Unity ', 'Blender'],
@@ -15,7 +15,7 @@ const projects = [
   {
     name: 'Mini Minecraft',
     link: '/projects/mini-minecraft',
-    image: '/projects-images/mini-minecraft/title.PNG',
+    image: '/projects-images/mini-minecraft/title.png',
     description:
       'Version of Minecraft with multithreading implemented with a custom game engine.',
     tags: ['C++', 'OpenGL', 'GLSL'],
@@ -23,7 +23,7 @@ const projects = [
   {
     name: 'Path Tracer',
     link: '/projects/pathtracer',
-    image: '/projects-images/path-tracer/title.PNG',
+    image: '/projects-images/path-tracer/title.png',
     description:
       'Monte-Carlo Pathtracer with scene creation, multisampling, and materials.',
     tags: ['GLSL', 'OpenGL', 'C++'],
@@ -31,7 +31,7 @@ const projects = [
   {
     name: 'Procedural City',
     link: '/projects/procedural-city',
-    image: '/projects-images/procedural-city/title.PNG',
+    image: '/projects-images/procedural-city/title.png',
     description:
       'Procedurally Built Medieval City using Wave Function Collapse.',
     tags: ['Unreal', 'Houdini', 'Python'],
@@ -39,7 +39,7 @@ const projects = [
   {
     name: 'Real-Time Renderer',
     link: '/projects/realtime-renderer',
-    image: '/projects-images/realtime-renderer/title.PNG',
+    image: '/projects-images/realtime-renderer/title.png',
     description:
       'Real-time Rendering Engine implementing PBR materials, textures, and HDRIs.',
     tags: ['GLSL', 'OpenGL'],
@@ -47,7 +47,7 @@ const projects = [
   {
     name: 'Mini Maya',
     link: '/projects/mini-maya',
-    image: '/projects-images/mini-maya/title.PNG',
+    image: '/projects-images/mini-maya/title.png',
     description:
       '3D Modelling Program that implements subdivision and mesh skinning with basic skeletons.',
     tags: ['C++', 'OpenGL', 'Qt'],
@@ -55,14 +55,14 @@ const projects = [
   {
     name: 'WebGL Procedural Fireball',
     link: '/projects/webGL-fireball',
-    image: '/projects-images/webgl-fireball/title.PNG',
+    image: '/projects-images/webgl-fireball/title.png',
     description: 'Procedurally generated fireball character.',
     tags: ['WebGL', 'GLSL'],
   },
   {
     name: 'WebGL Procedural Technoblob',
     link: '/projects/webGL-procedural-blob',
-    image: '/projects-images/webgl-blob/title.PNG',
+    image: '/projects-images/webgl-blob/title.png',
     description: 'Procedurally generated noise-function dense blob.',
     tags: ['WebGL', 'GLSL'],
   },
@@ -129,7 +129,7 @@ const ProjectsSection = () => {
                       />
                       <div className="absolute left-1/4 top-1/4 w-1/2">
                         <h1
-                          className={`rounded-xl text-3xl font-semibold dark:bg-opacity-0`}
+                          className={`rounded-xl text-3xl font-semibold dark:bg-opacity-0 max-xs:text-xl`}
                         >
                           {project.name}
                         </h1>
@@ -143,7 +143,7 @@ const ProjectsSection = () => {
                               // eslint-disable-next-line react/jsx-key
                               <div
                                 key={idx}
-                                className={`mt-4 rounded-xl px-4 py-2 font-semibold text-white dark:outline dark:outline-2 dark:outline-white ${
+                                className={`mt-4 rounded-xl px-4 py-2 font-semibold text-white dark:outline dark:outline-2 dark:outline-white max-xs:text-sm ${
                                   idx % 2 === 0
                                     ? 'bg-gradient-to-r from-blue-500 to-blue-700'
                                     : 'bg-gradient-to-r from-fuchsia-600 to-fuchsia-800'

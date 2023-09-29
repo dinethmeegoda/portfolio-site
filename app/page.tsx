@@ -1,15 +1,15 @@
-import HeroSection from '@/components/HeroSection';
-import Demo from '@/components/Demo';
+import ProjectsSection from '@/components/ProjectsSection';
 
 export const metadata = {
   title: 'Projects | Dineth Meegoda',
+  description:
+    'UPenn Student combining code, graphics, and art! Check out my projects here.',
 };
 
-export default function Home() {
+export default function Projects() {
   return (
-    <main className="xs:px-6 mx-auto max-w-3xl px-4 md:max-w-7xl">
-      <HeroSection />
-      <Demo />
+    <main className="mx-auto px-4 xs:px-6 md:max-w-fit">
+      <ProjectsSection />
     </main>
   );
 }

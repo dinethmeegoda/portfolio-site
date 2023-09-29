@@ -7,62 +7,62 @@ const projects = [
   {
     name: 'Sushi House',
     link: '/portfolio/sushi-house',
-    image: '/portfolio-images/sushi-house/title.PNG',
+    image: '/portfolio-images/sushi-house/title.png',
     tags: ['Unreal ', 'Substance ', 'Maya'],
   },
   {
     name: 'Saul Goodman',
     link: '/portfolio/saul-goodman',
-    image: '/portfolio-images/saul-goodman/title.PNG',
+    image: '/portfolio-images/saul-goodman/title.png',
     tags: ['Unreal ', 'Substance ', 'Maya'],
   },
   {
     name: 'Procedural Wall Material',
     link: '/portfolio/brick-wall-material',
-    image: '/portfolio-images/brick-wall-material/title.PNG',
+    image: '/portfolio-images/brick-wall-material/title.png',
     tags: ['Substance Designer'],
   },
   {
     name: 'League Of Legends: Urgot',
     link: '/portfolio/urgot',
-    image: '/portfolio-images/urgot/title.PNG',
+    image: '/portfolio-images/urgot/title.png',
     tags: ['Maya', 'Blender'],
   },
   {
     name: 'League Of Legends: Shen',
     link: '/portfolio/shen',
-    image: '/portfolio-images/shen/title.PNG',
+    image: '/portfolio-images/shen/title.png',
     tags: ['Maya', 'Blender'],
   },
   {
     name: 'Trippin on Shaders',
     link: '/portfolio/shadertoy-trippin',
-    image: '/portfolio-images/shadertoy-trippin/title.PNG',
+    image: '/portfolio-images/shadertoy-trippin/title.png',
     tags: ['GLSL', 'Shadertoy', 'Premiere'],
   },
   {
     name: 'Low Poly Room',
     link: '/portfolio/low-poly-room',
-    image: '/portfolio-images/low-poly-room/title.PNG',
+    image: '/portfolio-images/low-poly-room/title.png',
     tags: ['Maya', 'Arnold'],
   },
   {
     name: 'Trachea',
     link: '/portfolio/trachea',
-    image: '/portfolio-images/trachea/title.PNG',
+    image: '/portfolio-images/trachea/title.png',
     tags: ['Maya', 'Substance', 'Blender'],
   },
   {
     name: 'Simulation Animation',
     link: '/portfolio/simulation-animation',
-    image: '/portfolio-images/simulation-animation/title.PNG',
+    image: '/portfolio-images/simulation-animation/title.png',
     tags: ['Illustrator', 'After Effects'],
   },
   {
     name: 'Organ Donation Animation',
     link: '/portfolio/organ-donor-animation',
-    image: '/portfolio-images/organ-donor-animation/title.PNG',
-    tags: ['Adobe Animate', 'Premire Pro'],
+    image: '/portfolio-images/organ-donor-animation/title.png',
+    tags: ['Animate', 'Premire'],
   },
 ];
 
@@ -82,7 +82,7 @@ const PortfolioSection = () => {
               <Link href={project.link}>
                 <div key={idx} className={`relative rounded-xl`}>
                   <SlideUp offset="-150px 0px -150px 0px">
-                    <div className="animate-slideUpCubiBezier animation-delay-2">
+                    <div className="animation-delay-2 animate-slideUpCubiBezier">
                       <Image
                         className="rounded-xl opacity-100 transition-[opacity] duration-300 ease-in-out hover:opacity-50 md:opacity-100"
                         src={project.image}
@@ -92,7 +92,7 @@ const PortfolioSection = () => {
                       />
                       <div className="">
                         <h1
-                          className={`mt-4 rounded-xl text-left text-3xl font-semibold dark:bg-opacity-0`}
+                          className={`mt-4 rounded-xl text-left text-3xl font-semibold dark:bg-opacity-0 max-xs:text-2xl`}
                         >
                           {project.name}
                         </h1>

@@ -1,13 +1,42 @@
 'use client';
-import React, { useState } from 'react';
+
+import React, { ReactNode, useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { RiMoonFill, RiSunLine } from 'react-icons/ri';
 import { AnimatePresence, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 interface NavItem {
   label: string;
   page: string;
+}
+
+function NavItem({
+  href,
+  children,
+  exact = false,
+}: {
+  href: string;
+  children: ReactNode;
+  exact?: boolean;
+}) {
+  const pathName = usePathname();
+  const isActive = exact ? pathName === href : pathName!.startsWith(href);
+
+  return (
+    <Link
+      href={href}
+      className={`lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500 ${
+        isActive ? 'font-semibold' : 'opacity-50 hover:opacity-100'
+      }`}
+      onClick={() => {
+        scrollTo({ top: 0 });
+      }}
+    >
+      {children}
+    </Link>
+  );
 }
 
 const Navbar = () => {
@@ -17,7 +46,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed top-0 z-50 mx-auto w-full bg-white px-4 shadow dark:border-b dark:border-gray-200 dark:bg-stone-900 sm:px-20">
+      <header className="fixed top-0 z-50 mx-auto mb-40 w-full bg-white px-4 shadow dark:border-b dark:border-gray-200 dark:bg-stone-900 sm:px-20">
         <div className="justify-between md:flex md:items-center">
           <div className="relative z-10 flex items-center justify-between py-3">
             {/* Logo */}
@@ -50,24 +79,15 @@ const Navbar = () => {
           {/* Desktop Bar*/}
           <div className={`mt-0 hidden pb-0 text-2xl md:block`}>
             <div className="flex items-center space-x-6 space-y-0">
-              <Link
-                href="/"
-                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
-              >
+              <NavItem href="/about" exact>
                 About
-              </Link>
-              <Link
-                href="/projects"
-                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
-              >
+              </NavItem>
+              <NavItem href="/" exact>
                 Projects
-              </Link>
-              <Link
-                href="/portfolio"
-                className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
-              >
+              </NavItem>
+              <NavItem href="/portfolio" exact>
                 Portfolio
-              </Link>
+              </NavItem>
               <button
                 onClick={() => setTheme('light')}
                 className="hidden rounded-xl bg-slate-100 p-2 dark:block"
@@ -95,14 +115,14 @@ const Navbar = () => {
           >
             <div className="space-y-8 text-center">
               <Link
-                href="/"
+                href="/about"
                 className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
                 onClick={() => setOpen(!isOpen)}
               >
                 About
               </Link>
               <Link
-                href="/projects"
+                href="/"
                 className="lg:inLine-block block text-neutral-900 hover:text-blue-600 dark:text-neutral-100 dark:hover:text-fuchsia-500"
                 onClick={() => setOpen(!isOpen)}
               >
