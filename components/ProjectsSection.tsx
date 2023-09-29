@@ -7,7 +7,7 @@ const projects = [
   {
     name: 'VR Mesh Tool',
     link: '/projects/vr-mesh-cut',
-    image: '/projects-images/vr-mesh/title.png',
+    image: '/projects-images/vr-mesh/vr-mesh-title.png',
     description:
       'A tool built for Unity that procedurally creates real-time mesh cuts on models.',
     tags: ['C# ', 'Unity ', 'Blender'],
@@ -15,7 +15,7 @@ const projects = [
   {
     name: 'Mini Minecraft',
     link: '/projects/mini-minecraft',
-    image: '/projects-images/mini-minecraft/title.png',
+    image: '/projects-images/mini-minecraft/mini-minecraft-title.png',
     description:
       'Version of Minecraft with multithreading implemented with a custom game engine.',
     tags: ['C++', 'OpenGL', 'GLSL'],
@@ -23,7 +23,7 @@ const projects = [
   {
     name: 'Path Tracer',
     link: '/projects/pathtracer',
-    image: '/projects-images/path-tracer/title.png',
+    image: '/projects-images/path-tracer/path-tracer-title.png',
     description:
       'Monte-Carlo Pathtracer with scene creation, multisampling, and materials.',
     tags: ['GLSL', 'OpenGL', 'C++'],
@@ -31,7 +31,7 @@ const projects = [
   {
     name: 'Procedural City',
     link: '/projects/procedural-city',
-    image: '/projects-images/procedural-city/title.png',
+    image: '/projects-images/procedural-city/procedural-city-title.png',
     description:
       'Procedurally Built Medieval City using Wave Function Collapse.',
     tags: ['Unreal', 'Houdini', 'Python'],
@@ -39,7 +39,7 @@ const projects = [
   {
     name: 'Real-Time Renderer',
     link: '/projects/realtime-renderer',
-    image: '/projects-images/realtime-renderer/title.png',
+    image: '/projects-images/realtime-renderer/realtime-renderer-title.png',
     description:
       'Real-time Rendering Engine implementing PBR materials, textures, and HDRIs.',
     tags: ['GLSL', 'OpenGL'],
@@ -47,7 +47,7 @@ const projects = [
   {
     name: 'Mini Maya',
     link: '/projects/mini-maya',
-    image: '/projects-images/mini-maya/title.png',
+    image: '/projects-images/mini-maya/mini-maya-title.png',
     description:
       '3D Modelling Program that implements subdivision and mesh skinning with basic skeletons.',
     tags: ['C++', 'OpenGL', 'Qt'],
@@ -55,49 +55,49 @@ const projects = [
   {
     name: 'WebGL Procedural Fireball',
     link: '/projects/webGL-fireball',
-    image: '/projects-images/webgl-fireball/title.png',
+    image: '/projects-images/webgl-fireball/webgl-fireball-title.png',
     description: 'Procedurally generated fireball character.',
     tags: ['WebGL', 'GLSL'],
   },
   {
     name: 'WebGL Procedural Technoblob',
     link: '/projects/webGL-procedural-blob',
-    image: '/projects-images/webgl-blob/title.png',
+    image: '/projects-images/webgl-blob/webgl-blob-title.png',
     description: 'Procedurally generated noise-function dense blob.',
     tags: ['WebGL', 'GLSL'],
   },
   {
     name: 'Portfolio Site',
     link: '/projects/portfolio-site',
-    image: '/projects-images/portfolio-site/title.png',
+    image: '/projects-images/portfolio-site/portfolio-site-title.png',
     description: 'Personal Portfolio Site (So Meta).',
     tags: ['React', 'Tailwind', 'Next.js'],
   },
   {
     name: 'SDF Engine',
     link: '/projects/sdf-mogus',
-    image: '/projects-images/sdf-mogus/title.png',
+    image: '/projects-images/sdf-mogus/sdf-mogus-title.png',
     description: 'Ray Marching SDF Creation Engine.',
     tags: ['OpenGL', 'GLSL', 'C++'],
   },
   {
     name: 'Surface & Post Shaders',
     link: '/projects/shader-fun',
-    image: '/projects-images/shader-fun/title.png',
+    image: '/projects-images/shader-fun/shader-fun-title.png',
     description: 'Collection of GLSL surface & post shaders.',
     tags: ['OpenGL', 'GLSL', 'C++'],
   },
   {
     name: '3D Rasterizer',
     link: '/projects/rasterizer',
-    image: '/projects-images/rasterizer/title.png',
+    image: '/projects-images/rasterizer/rasterizer-title.png',
     description: '3D CPU Based Rasterizer with interactive camera controls.',
     tags: ['C++', 'Qt'],
   },
   {
     name: 'Bionic Traveler',
     link: '/projects/bionic-traveler',
-    image: '/projects-images/bionic-traveler/title.png',
+    image: '/projects-images/bionic-traveler/bionic-traveler-title.png',
     description: '2D RPG published on Steam made with UPGRADE@Penn.',
     tags: ['Unity', 'Photoshop'],
   },

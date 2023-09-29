@@ -6,7 +6,7 @@ import { HiArrowDown, HiArrowRight } from 'react-icons/hi';
 
 const Construction = () => {
   return (
-    <section id="construction">
+    <section>
       {/*Div that contains picture and text*/}
       <div className="flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-bold">

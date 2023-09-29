@@ -7,61 +7,64 @@ const projects = [
   {
     name: 'Sushi House',
     link: '/portfolio/sushi-house',
-    image: '/portfolio-images/sushi-house/title.png',
+    image: '/portfolio-images/sushi-house/sushi-house-title.png',
     tags: ['Unreal ', 'Substance ', 'Maya'],
   },
   {
     name: 'Saul Goodman',
     link: '/portfolio/saul-goodman',
-    image: '/portfolio-images/saul-goodman/title.png',
+    image: '/portfolio-images/saul-goodman/saul-goodman-title.png',
     tags: ['Unreal ', 'Substance ', 'Maya'],
   },
   {
     name: 'Procedural Wall Material',
     link: '/portfolio/brick-wall-material',
-    image: '/portfolio-images/brick-wall-material/title.png',
+    image:
+      '/portfolio-images/brick-wall-material/brick-wall-material-title.png',
     tags: ['Substance Designer'],
   },
   {
     name: 'League Of Legends: Urgot',
     link: '/portfolio/urgot',
-    image: '/portfolio-images/urgot/title.png',
+    image: '/portfolio-images/urgot/urgot-title.png',
     tags: ['Maya', 'Blender'],
   },
   {
     name: 'League Of Legends: Shen',
     link: '/portfolio/shen',
-    image: '/portfolio-images/shen/title.png',
+    image: '/portfolio-images/shen/shen-title.png',
     tags: ['Maya', 'Blender'],
   },
   {
     name: 'Trippin on Shaders',
     link: '/portfolio/shadertoy-trippin',
-    image: '/portfolio-images/shadertoy-trippin/title.png',
+    image: '/portfolio-images/shadertoy-trippin/shadertoy-trippin-title.png',
     tags: ['GLSL', 'Shadertoy', 'Premiere'],
   },
   {
     name: 'Low Poly Room',
     link: '/portfolio/low-poly-room',
-    image: '/portfolio-images/low-poly-room/title.png',
+    image: '/portfolio-images/low-poly-room/low-poly-room-title.png',
     tags: ['Maya', 'Arnold'],
   },
   {
     name: 'Trachea',
     link: '/portfolio/trachea',
-    image: '/portfolio-images/trachea/title.png',
+    image: '/portfolio-images/trachea/trachea-title.png',
     tags: ['Maya', 'Substance', 'Blender'],
   },
   {
     name: 'Simulation Animation',
     link: '/portfolio/simulation-animation',
-    image: '/portfolio-images/simulation-animation/title.png',
+    image:
+      '/portfolio-images/simulation-animation/simulation-animation-title.png',
     tags: ['Illustrator', 'After Effects'],
   },
   {
     name: 'Organ Donation Animation',
     link: '/portfolio/organ-donor-animation',
-    image: '/portfolio-images/organ-donor-animation/title.png',
+    image:
+      '/portfolio-images/organ-donor-animation/organ-donor-animation-title.png',
     tags: ['Animate', 'Premire'],
   },
 ];
