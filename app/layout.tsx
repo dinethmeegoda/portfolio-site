@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import '../styles/globals.css';
 import Navbar from '@/components/Navbar';
 import { ThemeProvider } from 'next-themes';
-import { useRouter } from 'next/router';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function RootLayout({
   children,
@@ -12,14 +12,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const router = useRouter();
+  const path = usePathname();
 
   // when route changes, scroll to the top
   React.useEffect(() => {
     if (window) {
       window.scrollTo(0, 0);
     }
-  }, [router.pathname]);
+  }, [path]);
   return (
     <html lang="en">
       <head />
