@@ -4,7 +4,19 @@ import Image from 'next/image';
 const ProceduralCity = () => {
   return (
     <section id="home">
-      <div className="container mx-auto mb-10 text-center text-3xl">
+      <div className="container mx-auto mb-10 text-center text-xl xl:text-3xl">
+        <p className="mb-6">
+          {' '}
+          This took a group effort to get working. I was responsible for the
+          chimney Houdini tool,{' '}
+          <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+            <a href="../portfolio/brick-wall-material">
+              procedural brick wall material
+            </a>
+          </span>
+          , packing & managing some asset textures, and input on the final
+          renders and video.
+        </p>
         <p>Still working on the breakdown but, here&apos;s a overview video.</p>
         <div className="mt-10 flex aspect-video flex-col">
           <iframe

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import '../styles/globals.css';
 import Navbar from '@/components/Navbar';
 import { ThemeProvider } from 'next-themes';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export default function RootLayout({
   children,

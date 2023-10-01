@@ -5,7 +5,24 @@ const MiniMC = () => {
   return (
     <section id="home">
       <div className="container mx-auto mb-10 text-center text-3xl">
-        <p>Still working on the breakdown but, here&apos;s a overview video.</p>
+        <p className="mb-6">
+          {' '}
+          I worked on this with{' '}
+          <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+            <a href="https://tlshaw.me" target="_blank">
+              Thomas Shaw
+            </a>
+          </span>{' '}
+          and{' '}
+          <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+            <a href="https://kevinmasdigitalportfolio.com" target="_blank">
+              Kevin Ma
+            </a>
+          </span>
+          . I was responsible for aspects of the procedural generation,
+          multithreaded terrain expansion, and weather system.
+        </p>
+        <p>Still working on the breakdown but here&apos;s a overview video.</p>
         <div className="mt-10 flex aspect-video flex-col">
           <iframe
             className="h-full w-full rounded-lg"

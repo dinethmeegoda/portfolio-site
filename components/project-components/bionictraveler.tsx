@@ -5,7 +5,16 @@ const BionicTraveler = () => {
   return (
     <section id="home">
       <div className="container mx-auto mb-10 text-center text-3xl">
-        <p>Still working on the breakdown but, here&apos;s a overview video.</p>
+        <p>
+          Still working on the breakdown but, here&apos;s a overview video.{' '}
+          <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+            <a href="https://store.steampowered.com/app/2026430/UPGRADE_202122__Bionic_Traveler/">
+              Click here
+            </a>
+          </span>{' '}
+          for the Steam page!
+        </p>
+
         <div className="mt-10 flex aspect-video flex-col">
           <iframe
             className="h-full w-full rounded-lg"

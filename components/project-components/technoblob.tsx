@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Technoblob = () => {
   return (
     <section id="home">
-      <div className="container mx-auto mb-10 text-center text-3xl">
+      <div className="container mx-auto mb-10 text-center text-xl xl:text-3xl">
         <p>
           Still working on the breakdown but, here&apos;s a{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">

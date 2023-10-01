@@ -87,7 +87,7 @@ const PortfolioSection = () => {
                   <SlideUp offset="-150px 0px -150px 0px">
                     <div className="animation-delay-2 animate-slideUpCubiBezier">
                       <Image
-                        className="rounded-xl opacity-100 transition-[opacity] duration-300 ease-in-out hover:opacity-50 md:opacity-100"
+                        className="h-full w-full rounded-xl opacity-100 transition-[opacity] duration-300 ease-in-out hover:opacity-50 md:opacity-100"
                         src={project.image}
                         alt={project.name}
                         width={500}
