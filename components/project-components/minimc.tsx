@@ -9,13 +9,17 @@ const MiniMC = () => {
           {' '}
           I worked on this with{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
-            <a href="https://tlshaw.me" target="_blank">
+            <a href="https://tlshaw.me" target="_blank" rel="noreferrer">
               Thomas Shaw
             </a>
           </span>{' '}
           and{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
-            <a href="https://kevinmasdigitalportfolio.com" target="_blank">
+            <a
+              href="https://kevinmasdigitalportfolio.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Kevin Ma
             </a>
           </span>

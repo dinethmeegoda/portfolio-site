@@ -9,7 +9,7 @@ const SimulationAnimation = () => {
           {' '}
           I worked on this with{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
-            <a href="https://chiu.fyi" target="_blank">
+            <a href="https://chiu.fyi" target="_blank" rel="noreferrer">
               Max Chiu
             </a>
           </span>
