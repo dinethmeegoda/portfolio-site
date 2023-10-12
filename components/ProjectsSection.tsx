@@ -53,6 +53,13 @@ const projects = [
     tags: ['C++', 'OpenGL', 'Qt'],
   },
   {
+    name: 'Bionic Traveler',
+    link: '/projects/bionic-traveler',
+    image: '/projects-images/bionic-traveler/bionic-traveler-title.png',
+    description: '2D RPG published on Steam made with UPGRADE@Penn.',
+    tags: ['Unity', 'Photoshop'],
+  },
+  {
     name: 'WebGL Procedural Fireball',
     link: '/projects/webGL-fireball',
     image: '/projects-images/webgl-fireball/webgl-fireball-title.png',
@@ -93,13 +100,6 @@ const projects = [
     image: '/projects-images/rasterizer/rasterizer-title.png',
     description: '3D CPU Based Rasterizer with interactive camera controls.',
     tags: ['C++', 'Qt'],
-  },
-  {
-    name: 'Bionic Traveler',
-    link: '/projects/bionic-traveler',
-    image: '/projects-images/bionic-traveler/bionic-traveler-title.png',
-    description: '2D RPG published on Steam made with UPGRADE@Penn.',
-    tags: ['Unity', 'Photoshop'],
   },
 ];
 

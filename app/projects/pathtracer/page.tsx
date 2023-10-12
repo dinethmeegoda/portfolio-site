@@ -1,4 +1,4 @@
-import Construction from '@/components/Construction';
+import PathTracer from "@/components/project-components/pathtracer";
 
 export const metadata = {
   title: 'Path Tracer | Dineth Meegoda',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <main className="my-28 md:my-48">
-      <Construction />
+      <PathTracer />
     </main>
   );
 }

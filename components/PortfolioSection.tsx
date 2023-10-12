@@ -36,6 +36,12 @@ const projects = [
     tags: ['Maya', 'Blender'],
   },
   {
+    name: 'Jellyfish Simulation',
+    link: '/portfolio/jellyfish',
+    image: '/portfolio-images/jellyfish/jellyfish-title.png',
+    tags: ['Houdini'],
+  },
+  {
     name: 'Trippin on Shaders',
     link: '/portfolio/shadertoy-trippin',
     image: '/portfolio-images/shadertoy-trippin/shadertoy-trippin-title.png',

@@ -1,4 +1,4 @@
-import Construction from '@/components/Construction';
+import BrickWall from '@/components/portfolio-components/brick-wall-material';
 
 export const metadata = {
   title: 'Brick Wall Material | Dineth Meegoda',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <main className="my-28 md:my-48">
-      <Construction />
+      <BrickWall />
     </main>
   );
 }

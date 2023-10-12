@@ -1,4 +1,4 @@
-import Construction from '@/components/Construction';
+import MiniMaya from "@/components/project-components/mini-maya";
 
 export const metadata = {
   title: 'Mini-Maya | Dineth Meegoda',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <main className="my-28 md:my-48">
-      <Construction />
+      <MiniMaya />
     </main>
   );
 }

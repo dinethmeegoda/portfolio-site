@@ -5,6 +5,7 @@ const Saul = () => {
   return (
     <section id="home">
       <div className="container mx-auto mb-10 text-center text-3xl">
+        <p className='mb-10 mx-6'> A character model created by solely me in Unreal Engine, Substance Painter, ZBrush, and Maya. Responsible for all aspects except for eyeball material.</p>
         <p>
           Still working on the breakdown but, here&apos;s a{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">

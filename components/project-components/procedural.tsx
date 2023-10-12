@@ -5,9 +5,11 @@ const ProceduralCity = () => {
   return (
     <section id="home">
       <div className="container mx-auto mb-10 text-center text-xl xl:text-3xl">
-        <p className="mb-6">
-          {' '}
-          This took a group effort to get working. I was responsible for the
+        <p className="mb-6 px-6">
+          A pipeline through several softwares that procedurally generates a medieval city. The workflow
+          included writing a wave collapse function with Python for Maya, Houdini, Substance Painter/Designer, and Unreal Engine.
+          </p>
+          <p>This took a group effort to get working. I was responsible for the
           chimney Houdini tool,{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
             <a href="../portfolio/brick-wall-material">

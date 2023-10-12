@@ -1,4 +1,4 @@
-import Construction from '@/components/Construction';
+import RealTime from "@/components/project-components/realtime-renderer";
 
 export const metadata = {
   title: 'Real-Time Renderer | Dineth Meegoda',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <main className="my-28 md:my-48">
-      <Construction />
+      <RealTime />
     </main>
   );
 }

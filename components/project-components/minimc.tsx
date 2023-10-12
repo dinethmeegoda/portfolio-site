@@ -5,6 +5,8 @@ const MiniMC = () => {
   return (
     <section id="home">
       <div className="container mx-auto mb-10 text-center text-3xl">
+      <p className='mb-10 mx-6'> This is a reimagining of the game Minecraft built in C++, OpenGL,
+      and GLSL.</p>
         <p className="mb-6">
           {' '}
           I worked on this with{' '}
