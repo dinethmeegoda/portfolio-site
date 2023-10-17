@@ -42,9 +42,9 @@ const Demo = () => {
             <div className=" aspect-video ">
               <iframe
                 className=" h-full w-full rounded-lg"
-                src="https://www.youtube.com/embed/LETSDF6VsEc?si=o0qe74Jb1AKCcJPU"
+                src="https://player.vimeo.com/video/873559883?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479"
                 width="100%"
-                title="YouTube video player"
+                title="Vimeo video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
