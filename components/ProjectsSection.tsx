@@ -10,7 +10,7 @@ const projects = [
     image: '/projects-images/vr-mesh/vr-mesh-title.png',
     description:
       'A tool built for Unity that procedurally creates real-time mesh cuts on models.',
-    tags: ['C# ', 'Unity ', 'Blender'],
+    tags: ['C# ', 'Unity ', 'Oculus'],
   },
   {
     name: 'Mini Minecraft',

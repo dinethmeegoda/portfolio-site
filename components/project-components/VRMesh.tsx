@@ -242,6 +242,7 @@ const VRMesh = () => {
               </div>
             </div>
           </div>
+
           <div className="">
             <h1 className="mb-4 text-3xl font-semibold text-blue-800 dark:text-fuchsia-400 max-xl:text-xl max-sm:text-lg xl:text-left">
               Future Work and What I&apos;ve Learned
@@ -292,8 +293,8 @@ const VRMesh = () => {
                 className="rounded-xl"
                 src="/projects-images/vr-mesh/FinalMeshCut.gif"
                 alt=""
-                width={4000}
-                height={4000}
+                width={853}
+                height={480}
               />
               <p className="font-style: my-4 italic max-xl:text-lg max-sm:text-base xl:text-left xl:text-xl">
                 Final Demo of the Cut.
