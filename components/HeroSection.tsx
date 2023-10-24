@@ -25,7 +25,7 @@ const HeroSection = () => {
             {' '}
             Hey, I&apos;m Dineth!
           </h1>
-          <p className="mb-6 mt-4 text-left lg:pr-12 lg:text-2xl">
+          <p className="mb-6 mt-4 text-left text-lg lg:pr-12 lg:text-2xl">
             I&#39;m a junior at the
             <span className="font-bold text-blue-500">
               {' '}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             </a>{' '}
             chapter.
           </p>
-          <p className="mb-6 mt-4 text-left lg:pr-12 lg:text-2xl">
+          <p className="mb-6 mt-4 text-left text-lg lg:pr-12 lg:text-2xl">
             I&apos;m especially interested in proceduralism and playing with
             realism and stylization when it comes to creating and recreating
             worlds within games and animation.
