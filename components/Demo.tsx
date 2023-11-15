@@ -57,6 +57,24 @@ const Demo = () => {
               <div className="">
                 <h1 className="mb-6 text-center text-2xl font-bold md:text-left">
                   {' '}
+                  Tech Art - Rigging Reel
+                </h1>
+              </div>
+              <div className=" aspect-video">
+                <iframe
+                  className=" h-full w-full rounded-lg"
+                  src="https://player.vimeo.com/video/884628104?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                  width="100%"
+                  title="Vimeo video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            <div>
+              <div className="">
+                <h1 className="mb-6 text-center text-2xl font-bold md:text-left">
+                  {' '}
                   TD/CG Generalist Reel
                 </h1>
               </div>
