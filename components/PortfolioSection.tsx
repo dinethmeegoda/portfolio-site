@@ -48,6 +48,13 @@ const projects = [
     tags: ['Maya', 'Blender'],
   },
   {
+    name: 'Stylized Water Material',
+    link: '/portfolio/stylized-water-material',
+    image:
+      '/portfolio-images/stylized-water-material/stylized-water-material-title.png',
+    tags: ['Substance Designer'],
+  },
+  {
     name: 'Jellyfish Simulation',
     link: '/portfolio/jellyfish',
     image: '/portfolio-images/jellyfish/jellyfish-title.png',
