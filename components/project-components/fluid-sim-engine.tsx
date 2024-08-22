@@ -8,13 +8,13 @@ const FluidSim = () => {
         <p className="mx-6 mb-10">
           {' '}
           A lagrangian fluid simulation engine that works interactively in
-          realtime. It's made with C++ and OpenGL with parallelizable algorithms
-          to allow for optimization with compute shaders.
+          realtime. It&apos;s made with C++ and OpenGL with parallelizable
+          algorithms to allow for optimization with compute shaders.
         </p>
         <p className="mx-10 mb-6">
           {' '}
           Everything was solely developed by me. However, I had a lot of
-          algorithmic inspiration from Sebastian Lague's{' '}
+          algorithmic inspiration from Sebastian Lague&apos;s{' '}
           <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
             <a
               href="https://www.youtube.com/watch?v=rSKMYc1CQHE&pp=ygUVc2ViYXN0aWFuIGxhZ3VlIGZsdWlk"

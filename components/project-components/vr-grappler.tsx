@@ -8,8 +8,8 @@ const Grappler = () => {
         <p className="mx-6 mb-10">
           {' '}
           A VR Game prototype which enables the player to swing around with
-          dual-wield grapple guns! It's a physics based game developed with
-          OpenXR and Unity and I'm excited to develop it further.
+          dual-wield grapple guns! It&apos;s a physics based game developed with
+          OpenXR and Unity and I&apos;m excited to develop it further.
         </p>
         <p>
           Still working on the breakdown but, here&apos;s a{' '}

@@ -7,7 +7,7 @@ const Legoifier = () => {
       <div className="container mx-auto mb-10 text-center text-xl xl:text-3xl">
         <p className="mx-6 mb-10">
           {' '}
-          A Houdini tool that transforms any mesh into Lego's! Allows for brick
+          A Houdini tool that transforms any mesh into Lego! Allows for brick
           customization such as slope threshold, plate coverage, and brick
           resolution.
         </p>

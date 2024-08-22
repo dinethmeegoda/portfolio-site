@@ -7,7 +7,7 @@ const Griddle = () => {
       <div className="container mx-auto mb-10 text-center text-xl xl:text-3xl">
         <p className="mx-6 mb-10">
           {' '}
-          A Web Based Asset Database Application for 3D Artists. It's built
+          A Web Based Asset Database Application for 3D Artists. It&apos;s built
           around the OpenUSD (Open Universal Scene Description) framework and
           leverages asset opinions, layers, and inherits.
         </p>
