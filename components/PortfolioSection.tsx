@@ -11,6 +11,18 @@ const projects = [
     tags: ['Unreal ', 'Substance ', 'Maya'],
   },
   {
+    name: 'Sunset Beach',
+    link: '/portfolio/stylized-beach',
+    image: '/portfolio-images/stylized-beach/stylized-beach-title.png',
+    tags: ['Unity ', 'HLSL ', 'Maya'],
+  },
+  {
+    name: 'Project: Blame',
+    link: '/portfolio/project-blame',
+    image: '/portfolio-images/project-blame/project-blame-title.png',
+    tags: ['Substance Designer', 'Blender'],
+  },
+  {
     name: 'Saul Goodman',
     link: '/portfolio/saul-goodman',
     image: '/portfolio-images/saul-goodman/saul-goodman-title.png',

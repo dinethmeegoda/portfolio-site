@@ -13,11 +13,45 @@ const projects = [
     tags: ['C# ', 'Unity ', 'Oculus'],
   },
   {
+    name: 'Real-Time Fluid Sim Engine',
+    link: '/projects/fluid-sim-engine',
+    image: '/projects-images/fluid-sim-engine/fluid-sim-engine-title.png',
+    description: 'A Parallelizable Physics Particle Based Engine.',
+    tags: ['C++ ', 'GLSL', 'OpenGL'],
+  },
+  {
+    name: 'Maya Crowd Sim Plugin & Engine',
+    link: '/projects/maya-crowd-sim',
+    image: '/projects-images/maya-crowd-sim/maya-crowd-sim-title.png',
+    description: 'A tool built for Maya along with a OpenGL Crowd Sim Engine.',
+    tags: ['C++ ', 'Python ', 'Maya'],
+  },
+  {
+    name: 'Legoifier Tool',
+    link: '/projects/houdini-lego-tool',
+    image: '/projects-images/houdini-lego-tool/houdini-lego-tool-title.png',
+    description: 'A houdini tool that transforms any mesh to LEGO.',
+    tags: ['Houdini ', 'VEX '],
+  },
+  {
+    name: 'VR Grappler',
+    link: '/projects/vr-grappler',
+    image: '/projects-images/vr-grappler/vr-grappler-title.png',
+    description: 'A physics-based prototype based on real-time swinging.',
+    tags: ['Unity ', 'OpenXR ', 'C#'],
+  },
+  {
+    name: 'USD Griddle',
+    link: '/projects/griddle',
+    image: '/projects-images/griddle/griddle-title.png',
+    description: 'A web-based USD Database for 3D Artists.',
+    tags: ['USD ', 'Python ', 'FastAPI'],
+  },
+  {
     name: 'Mini Minecraft',
     link: '/projects/mini-minecraft',
     image: '/projects-images/mini-minecraft/mini-minecraft-title.png',
-    description:
-      'Version of Minecraft with multithreading implemented with a custom game engine.',
+    description: 'Multithreaded Voxel Based Engine.',
     tags: ['C++', 'OpenGL', 'GLSL'],
   },
   {
@@ -25,7 +59,7 @@ const projects = [
     link: '/projects/pathtracer',
     image: '/projects-images/path-tracer/path-tracer-title.png',
     description:
-      'Monte-Carlo Pathtracer with scene creation, multisampling, and materials.',
+      'Monte-Carlo Pathtracer with MIS, Scene Creation, and Materials.',
     tags: ['GLSL', 'OpenGL', 'C++'],
   },
   {
@@ -41,7 +75,7 @@ const projects = [
     link: '/projects/realtime-renderer',
     image: '/projects-images/realtime-renderer/realtime-renderer-title.png',
     description:
-      'Real-time Rendering Engine implementing PBR materials, textures, and HDRIs.',
+      'Real-time Rendering Engine implementing PBR surfaces, reflections, and HDRIs.',
     tags: ['GLSL', 'OpenGL'],
   },
   {
@@ -49,7 +83,7 @@ const projects = [
     link: '/projects/mini-maya',
     image: '/projects-images/mini-maya/mini-maya-title.png',
     description:
-      '3D Modelling Program that implements subdivision and mesh skinning with basic skeletons.',
+      '3D Modelling Program that implements subdivision, skinning, and USD exports.',
     tags: ['C++', 'OpenGL', 'Qt'],
   },
   {

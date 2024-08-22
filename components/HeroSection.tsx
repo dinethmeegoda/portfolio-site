@@ -26,7 +26,7 @@ const HeroSection = () => {
             Hey, I&apos;m Dineth!
           </h1>
           <p className="mb-6 mt-4 text-left text-lg lg:pr-12 lg:text-2xl">
-            I&#39;m a junior at the
+            I&#39;m a senior at the
             <span className="font-bold text-blue-500">
               {' '}
               University of Pennsylvania{' '}
@@ -39,7 +39,7 @@ const HeroSection = () => {
             </span>
             , a selective interdisplinary program between Computer Science and
             Fine Arts. I&apos;m also a teaching assistant for Penn&apos;s
-            Interactive Computer Graphics Class and currently the Events Chair
+            Procedural Computer Graphics Class and currently the Vice President
             of Penn&apos;s{' '}
             <a className="underline" href="http://cg.cis.upenn.edu/siggraph/">
               ACM SIGGRAPH
@@ -54,7 +54,7 @@ const HeroSection = () => {
           {/*Div that contains buttons*/}
           <div className="items-left flex flex-row space-x-4">
             <Link
-              href="https://drive.google.com/file/d/179LpsuRJuVi3jLxsa9BQOGWvJ0ifoCfT/view?usp=sharing"
+              href="https://drive.google.com/file/d/179LpsuRJuVi3jLxsa9BQOGWvJ0ifoCfT/view?usp=drive_link"
               target="_blank"
               className="inline-flex w-1/2 flex-row items-center justify-between gap-4 rounded bg-gray-700 px-6 py-3 font-semibold text-neutral-100 shadow transition-[padding] duration-300 ease-in-out hover:bg-gray-600 hover:pl-8 md:w-2/5"
             >

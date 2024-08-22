@@ -4,6 +4,7 @@ import { CSSProperties } from 'react';
 
 const skills = [
   { skill: 'C++' },
+  { skill: 'Python' },
   { skill: 'Unreal Engine' },
   { skill: 'OpenGL' },
   { skill: 'Unity' },
@@ -11,12 +12,12 @@ const skills = [
   { skill: 'Houdini' },
   { skill: 'VEX' },
   { skill: 'Autodesk Maya' },
-  { skill: 'Python' },
   { skill: 'ZBrush' },
   { skill: 'WebGL' },
   { skill: 'Substance Painter' },
   { skill: 'React' },
   { skill: 'Substance Designer' },
+  { skill: 'Perforce' },
   { skill: 'Next.js' },
   { skill: 'Premiere Pro' },
   { skill: 'Tailwind CSS' },
