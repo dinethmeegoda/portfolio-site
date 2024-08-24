@@ -146,7 +146,7 @@ const ProjectsSection = () => {
       </h1>
 
       <div className="mt-12 items-center justify-center text-center">
-        <div className="mx-auto grid w-2/3 grid-flow-row-dense grid-cols-1 gap-12 md:w-5/6 md:grid-cols-2 lg:w-5/6 lg:grid-cols-3">
+        <div className="mx-auto grid w-2/3 grid-flow-row-dense grid-cols-1 gap-12 lg:w-5/6 lg:grid-cols-2 xl:w-5/6 xl:grid-cols-3">
           {projects.map((project, idx) => {
             return (
               // eslint-disable-next-line react/jsx-key
