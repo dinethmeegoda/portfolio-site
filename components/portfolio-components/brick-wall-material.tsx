@@ -185,7 +185,7 @@ const BrickWall = () => {
               </p>
               <Image
                 className="mb-16 w-full rounded-xl"
-                src="/portfolio-images/brick-wall-material/brick-normals.png"
+                src="/portfolio-images/brick-wall-material/normals.png"
                 alt=""
                 width={500}
                 height={500}
@@ -325,7 +325,7 @@ const BrickWall = () => {
                 </div>
                 <Image
                   className="mb-8 rounded-xl max-lg:w-full"
-                  src="/portfolio-images/brick-wall-material/height-blend.png"
+                  src="/portfolio-images/brick-wall-material/brick-height-blend.png"
                   alt=""
                   width={500}
                   height={500}
