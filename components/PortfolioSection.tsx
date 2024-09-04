@@ -67,6 +67,12 @@ const projects = [
     tags: ['GLSL', 'Shadertoy', 'Premiere'],
   },
   {
+    name: 'AR Colonization Intervention',
+    link: '/portfolio/ar-lotus',
+    image: '/portfolio-images/ar-lotus/ar-lotus-title.png',
+    tags: ['Blender', 'USD'],
+  },
+  {
     name: 'Low Poly Room',
     link: '/portfolio/low-poly-room',
     image: '/portfolio-images/low-poly-room/low-poly-room-title.png',

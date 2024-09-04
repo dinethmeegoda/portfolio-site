@@ -39,12 +39,22 @@ const HeroSection = () => {
             </span>
             , a selective interdisplinary program between Computer Science and
             Fine Arts. I&apos;m also a teaching assistant for Penn&apos;s
-            Procedural Computer Graphics Class and currently the Vice President
-            of Penn&apos;s{' '}
+            Procedural Graphics Class and currently the President of Penn&apos;s{' '}
             <a className="underline" href="http://cg.cis.upenn.edu/siggraph/">
               ACM SIGGRAPH
             </a>{' '}
             chapter.
+          </p>
+          <p className="mb-6 mt-4 text-left text-lg lg:pr-12 lg:text-2xl">
+            I&apos;ve also previously interned at{' '}
+            <span className="font-bold text-blue-500 underline">
+              <a href="https://respawn.com">Respawn Entertainment</a>
+            </span>{' '}
+            working as a Technical Artist on Tools & Pipeline for the game{' '}
+            <span className="font-bold text-fuchsia-500 underline">
+              <a href="https://www.ea.com/games/apex-legends">Apex Legends</a>
+            </span>
+            .
           </p>
           <p className="mb-6 mt-4 text-left text-lg lg:pr-12 lg:text-2xl">
             I&apos;m especially interested in proceduralism and playing with

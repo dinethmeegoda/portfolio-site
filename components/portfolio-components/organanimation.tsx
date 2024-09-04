@@ -5,6 +5,16 @@ const OrganAnimation = () => {
   return (
     <section id="home">
       <div className="container mx-auto mb-10 text-center text-3xl">
+        <p className="mx-6 mb-10">
+          {' '}
+          A handdrawn digital animation about organ donamation made with Adobe
+          Animate. Made for the Leslie A. Ebert Legacy of Life Scholarship as
+          part of{' '}
+          <span className="font-bold text-blue-800 underline dark:text-fuchsia-500">
+            <a href="https://registerme.org/">Donate Life</a>
+          </span>
+          .
+        </p>
         <p>Still working on the breakdown but, here&apos;s a overview video.</p>
         <div className="mt-10 flex aspect-video flex-col">
           <iframe
